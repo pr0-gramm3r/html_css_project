@@ -51,13 +51,27 @@ header{
     font-size: 18px;
     margin: 0 0  0 30px;
 }
-.search{
-    padding: 15px;
-    display: inline;
-    padding-left: 30px;
 
+.search {
+    display: flex;
+    align-items: center; /* Vertically centers the icon and text */
+    background-color: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 5px 15px;
 
-}    
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  padding: 5px 245px 5px 0px;
+  font-size: 20px;
+  border-radius: 12px;
+  width: fit-content;
+}
+
 .search input{
     outline: none;
     border: 0.5px solid rgba(128, 128, 128, 0.05);
@@ -69,7 +83,7 @@ header{
 }
 
 .login{
-    width: 100px;
+    width: 150px;
     height: 40px;
     font-size: 18px;
     background: none;
@@ -87,15 +101,17 @@ header{
     color: #fff;
     padding: 0 0  0 15px;
 }
-.leb{
-    position: absolute;
-    right: 5;
-    top: 5;
-    margin-top: 12px;
-    margin-left: 20px;
-    border: none;
+
+.leb {
     background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-right: 10px; /* This creates the space between icon and text */
+    cursor: pointer;
 }
+
 .crt-btn a{
    position: absolute;
    margin-top: 15px;
@@ -335,4 +351,22 @@ header{
     font-size: 15px;
     font-weight: 100;
     margin-top: 15px;
+}
+
+.viewport {
+  height: 24px; /* Adjust based on font size */
+  overflow: hidden;
+  margin-left: 8px;
+}
+
+.slider {
+  transition: transform 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.item {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  color: #0c831f; /* Blinkit Green */
+  font-weight: 600;
 }
